@@ -4,8 +4,8 @@ import BookAdd from './BookAdd';
 
 function BookList() {
   const list = [
-    { name: 'firstBook', author: 'tobin', id: 1 },
-    { name: 'secondbook', author: 'selma', id: 2 },
+    { name: 'firstBook', author: 'kaylemba', id: 1 },
+    { name: 'secondbook', author: 'kaylemba', id: 2 },
   ];
   function displayBooks() {
     const results = list.map((value) => (
