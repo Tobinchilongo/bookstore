@@ -19,9 +19,9 @@ function BookAdd() {
 
   const submitBookToStore = () => {
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
-      author,
+      category: author,
     };
     dispatch(addBook(newBook));
   };
