@@ -7,9 +7,9 @@ The app will enable us do the following tasks:
  - Add a book.
  - Remove a selected book.
 
-![screenshot]( Coming soon !)
+![screenshot](CMS.png)
 
-## live Demo [click here](Coming soon)
+## live Demo [click here](https://confident-poitras-027965.netlify.app)
 
 
 ## Built With
