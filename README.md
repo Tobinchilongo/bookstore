@@ -5,7 +5,6 @@ The app will enable us do the following tasks:
 
  - Display a list of books.
  - Add a book.
- - Remove a selected book.
 
 ![screenshot](CMS.png)
 

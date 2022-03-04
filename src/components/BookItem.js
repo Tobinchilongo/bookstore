@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getBooks, removeBook } from '../redux/books/books';
-import progressBar from '../asset/progress.png';
 
 function BookItem() {
   const bookStore = useSelector((state) => state.booksReducer);
@@ -16,6 +17,8 @@ function BookItem() {
   const handleRemove = (id) => {
     dispatch(removeBook(id));
   };
+
+  const percentage = Math.floor(Math.random() * 99);
 
   return (
     bookStore.map((book) => (
@@ -34,12 +37,23 @@ function BookItem() {
               <li><button type="button">Edit</button></li>
             </ul>
           </div>
-          <div className="completion-detail d-flex">
-            <img className="progress-bar" src={progressBar} alt="progress-bar" />
-            <div className="completion-text d-flex">
-              <span className="completion">{}</span>
-              <span className="completed-word">Completed</span>
+          <div className="progress-bar">
+            <div className="round-bar" style={{ width: 60, height: 60 }}>
+              <CircularProgressbar
+                value={percentage}
+                styles={buildStyles({
+                  pathColor: '#0290ff',
+                })}
+              />
             </div>
+            <div className="count">
+              <p>
+                {percentage}
+                %
+              </p>
+              <span>Completed</span>
+            </div>
+            <i className="bg-ling" />
           </div>
           <div className="current-chapter d-flex">
             <span className="current-chapter-span">Current Chapter</span>
