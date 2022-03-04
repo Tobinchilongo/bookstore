@@ -1,71 +1,57 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Book Store
 
-The Bookstore is a website similar to the "Awesome Books" website but this time its been built with React. 
-The app will enable us do the following tasks:
-
- - Display a list of books.
- - Add a book.
- - Remove a selected book.
-
-![screenshot]( Coming soon !)
-
-## live Demo [click here](Coming soon)
-
+"Book Store" is a website for all fans of books. It is a Microverse project for learning how to build React aplications, use Redux for menaging state, consume API's and perform CRUD operations.
 
 ## Built With
 
 - ReactJS
-- Css
-- HTML
-- JavaScript
+- Redux and react-redux
 
+## Installation
 
-## Getting Started
+Go to your terminal, navigate to your working directory and run
 
-To get a local copy up and running follow these simple example steps.
+`git clone https://github.com/Nuri1977/bookstore-react.git`
 
-### Setup
+After that navigate to the newly created folder
 
-```bash
-git git@github.com:KayLemba/bookstore.git
-cd ./bookstore-1
-```
+`cd bookstore-react`
 
-### Install
+You now have access to the files.
+To install necessary dependencies run
 
-```bash
-npm install
-```
+`npm install`
 
-### To Run it
+Start a local server running the command
 
-```bash
-npm start
-```
+`npm start`
 
-### Build
+You should now have the project running locally on a dev server.
 
-```bash
-npm run build
-```
+`npm test`
+
+Launches the test runner in the interactive watch mode.
+
 ## Author
-👤 **Kalolo Chola Lemba**
-- GitHub: [@KayLemba](https://github.com/KayLemba)
-- Twitter: [@King-Kaylo1](https://twitter.com/King_Kaylo1) 
-- LinkedIn: [@kalolo-lemba](https://www.linkedin.com/in/kalolo-lemba-41a8339a/-41a8339a/)
+
+
+👤 **Nuri Lacka**
+
+- GitHub: [@Nuri1977](https://github.com/Nuri1977)
+- Twitter: [@Lackanuri](https://twitter.com/LackaNuri)
+- LinkedIn: [@nurilacka](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](../../issues/).
+
 ## Show your support
 
-Give a ⭐️ if you like this project! ❤️ ❤️ ❤️ 
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Microverse
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.

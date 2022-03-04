@@ -1,24 +1,24 @@
-const ADD_BOOK = 'BookStores/books/ADD_BOOK';
-const REMOVE_BOOK = 'BookStores/books/REMOVE_BOOK';
+const ADD_BOOK = 'bookStore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
 
-// This code displays Action Creators
 export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
 });
-export const removeBook = (bookId) => ({
-  type: REMOVE_BOOK,
-  id: bookId,
-});
 
-// This Code shows Reducers
+export const removeBook = (id) => ({
+  type: REMOVE_BOOK,
+  id,
+});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state, action.payload];
+      return [...state, {
+        ...action.payload,
+      }];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
     default:

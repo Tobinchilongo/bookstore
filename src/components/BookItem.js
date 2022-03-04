@@ -1,34 +1,33 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-function BookItem() {
-  const bookStore = useSelector((state) => state.booksReducer);
+function BookItem({ book }) {
   const dispatch = useDispatch();
 
-  const handleRemove = (id) => {
+  const handleRemoveBook = (id) => {
     dispatch(removeBook(id));
   };
+
   return (
-    bookStore.map((book) => (
-      <li key={book.id}>
-        <span>
-          {' '}
-          {book.title}
-          {' '}
-        </span>
-        <span>
-          {' '}
-          {book.author}
-          {' '}
-        </span>
-
-        {' '}
-        <button type="button" onClick={() => handleRemove(book.id)}>Delete</button>
-      </li>
-    ))
-
+    <li>
+      <h3>{book.category}</h3>
+      <h2>{book.title}</h2>
+      <h5>{book.author}</h5>
+      <div>
+        <button type="button" onClick={() => handleRemoveBook(book.id)}>Remove</button>
+      </div>
+    </li>
   );
 }
 
+BookItem.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
+};
 export default BookItem;
