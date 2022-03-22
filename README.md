@@ -39,9 +39,9 @@ Launches the test runner in the interactive watch mode.
 
 👤 **Nuri Lacka**
 
-- GitHub: [@Nuri1977](https://github.com/Nuri1977)
-- Twitter: [@Lackanuri](https://twitter.com/LackaNuri)
-- LinkedIn: [@nurilacka](https://www.linkedin.com/in/nuri-lacka-7141b01ba/)
+- GitHub: [@Tobinchilongo](https://github.com/Tobinchilongo)
+- Twitter: [@Tobin_Official](https://twitter.com/Tobin_Official)
+- LinkedIn: [@Tobinchilongo](https://www.linkedin.com/in/tobin-chilongo-a6736415a/)
 
 
 ## 🤝 Contributing
