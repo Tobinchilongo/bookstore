@@ -1,7 +1,7 @@
-const IntState = [];
-const CHECK_STATUS = 'CHECK_STATUS';
+const CHECK_STATUS = 'bookStore/categories/CHECK_STATUS';
+const InitialState = [];
 
-const CategoriesReducer = (state = IntState, action) => {
+const CategoriesReducer = (state = InitialState, action) => {
   switch (action.type) {
     case CHECK_STATUS:
       return 'under construction';
