@@ -1,31 +1,44 @@
-import { React, useRef } from 'react';
+import { React, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
-import { addBookApi } from '../redux/books/books';
+import { addBook } from '../redux/books/books';
 
 function FormAddBook() {
-  const titleInputRef = useRef();
-  const categoryInputRef = useRef();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('motivation');
   const dispatch = useDispatch();
 
   function submitBookToStore(event) {
     event.preventDefault();
-    const newBook = {
-      item_id: nanoid(),
-      title: titleInputRef.current.value,
-      category: categoryInputRef.current.value,
+    const handleChange = {
+      id: nanoid(),
+      title,
+      author,
+      category,
     };
-    dispatch(addBookApi(newBook));
-    titleInputRef.current.value = '';
-    categoryInputRef.current.value = '';
+    dispatch(addBook(handleChange));
+    setTitle('');
+    setAuthor('');
+    setCategory('motivation');
   }
 
   return (
     <div>
       <h2>Add new book</h2>
       <form onSubmit={submitBookToStore}>
-        <input type="text" name="name" placeholder="Book Title" id="title" ref={titleInputRef} required />
-        <input type="text" name="category" placeholder="Category" id="category" ref={categoryInputRef} required />
+        <input onChange={(e) => setTitle(e.target.value)} type="text" name="name" placeholder="Book Title" id="title" value={title} required />
+        <input onChange={(e) => setAuthor(e.target.value)} type="text" name="author" placeholder="author" id="author" value={author} required />
+        <select onChange={(e) => setCategory(e.target.value)} placeholder="Category">
+          <option value="motivation">Motivation</option>
+          <option value="romance">Romance</option>
+          <option value="business">Business</option>
+          <option value="fiction">Fiction</option>
+          <option value="adventure">Adventure</option>
+          <option value="horror">Horror</option>
+
+        </select>
+
         <button type="submit">Add Book</button>
       </form>
     </div>
