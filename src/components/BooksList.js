@@ -16,7 +16,11 @@ function BooksList({ books }) {
 }
 
 BooksList.propTypes = {
+<<<<<<< HEAD
   books: PropTypes.arrayOf(BookItem.propTypes.book).isRequired,
+=======
+  books: PropTypes.arrayOf.isRequired,
+>>>>>>> 57daad16aa2126a1c72e487de9f6dc62b748b257
 };
 
 export default BooksList;
