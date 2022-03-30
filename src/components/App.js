@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import BooksContainer from './BooksContainer';
+import BooksContainer from './BooksContainer. js';
 import CategoriesContainer from './CategoriesContainer';
 import Navigation from './Navigation';
 
