@@ -37,7 +37,7 @@ Launches the test runner in the interactive watch mode.
 ## Author
 
 
-👤 **Nuri Lacka**
+👤 **Tobin Chilongo Jnr**
 
 - GitHub: [@Tobinchilongo](https://github.com/Tobinchilongo)
 - Twitter: [@Tobin_Official](https://twitter.com/Tobin_Official)
