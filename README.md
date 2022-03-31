@@ -13,7 +13,7 @@
 
 Go to your terminal, navigate to your working directory and run
 
-`git clone https://github.com/Nuri1977/bookstore-react.git`
+`git clone https://github.com/Tobinchilongo/bookstore.git`
 
 After that navigate to the newly created folder
 
