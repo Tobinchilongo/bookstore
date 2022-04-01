@@ -1,8 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
+import { fetchBooks } from '../redux/books/books';
 
-function BooksList({ books }) {
+function BooksList() {
+  const books = useSelector((state) => state.books);
+  // console.log(books);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (books === null) {
+      dispatch(fetchBooks());
+    }
+  });
+
   return (
     <ul>
       {books.map((book) => (
@@ -14,9 +26,5 @@ function BooksList({ books }) {
     </ul>
   );
 }
-
-BooksList.propTypes = {
-  books: PropTypes.arrayOf(BookItem.propTypes.book).isRequired,
-};
 
 export default BooksList;

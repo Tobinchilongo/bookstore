@@ -20,7 +20,7 @@ function FormAddBook() {
     dispatch(addBook(handleChange));
     setTitle('');
     setAuthor('');
-    setCategory('motivation');
+    setCategory('Motivation');
   }
 
   return (
