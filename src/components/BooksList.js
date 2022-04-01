@@ -5,6 +5,7 @@ import { fetchBooks } from '../redux/books/books';
 
 function BooksList() {
   const books = useSelector((state) => state.books);
+  // console.log(books);
 
   const dispatch = useDispatch();
 

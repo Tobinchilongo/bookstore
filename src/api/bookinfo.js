@@ -7,20 +7,15 @@ const getData = async () => {
     throw new Error(error.message);
   }
 };
-const postData = async (data) => {
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(data),
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    return response.text();
-  } catch (error) {
-    throw new Error(error.message);
-  }
+const postData = (data) => {
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+
+  });
 };
 const deleteData = async (id) => {
   try {
