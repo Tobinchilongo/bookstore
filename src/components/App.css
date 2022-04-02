@@ -12,7 +12,7 @@
   margin: 20px auto;
 }
 
-/* ------ APP --------------*/
+/* ------ APP -------------- */
 
 header {
   background: #fff;
@@ -33,7 +33,7 @@ header {
 }
 
 .nav-logo h1 {
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 
 .nav-logo a {
@@ -60,7 +60,7 @@ li {
   color: #0290ff;
 }
 
-/* ------ APP --------------*/
+/* ------ APP -------------- */
 
 .book-layout {
   width: 70%;
@@ -159,7 +159,7 @@ li {
   margin-top: 10px;
 }
 
-/*------FORM -----*/
+/* ------FORM ----- */
 
 .book-form {
   width: 70%;
