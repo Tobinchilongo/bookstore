@@ -31,12 +31,12 @@ function FormAddBook() {
         <input onChange={(e) => setTitle(e.target.value)} type="text" className="title-field" name="name" placeholder="Book Title" id="title" value={title} required />
         <input onChange={(e) => setAuthor(e.target.value)} type="text" name="author" placeholder="Author" id="author" value={author} required />
         <select onChange={(e) => setCategory(e.target.value)} placeholder="Category">
-          <option value="motivation">Motivation</option>
-          <option value="romance">Romance</option>
-          <option value="business">Business</option>
-          <option value="fiction">Fiction</option>
-          <option value="adventure">Adventure</option>
-          <option value="horror">Horror</option>
+          <option value="Motivation">Motivation</option>
+          <option value="Romance">Romance</option>
+          <option value="Business">Business</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Horror">Horror</option>
 
         </select>
 
