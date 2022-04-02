@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'RobotoSlab-Bold', sans-serif;
+}
+
+.App {
+  background-color: #f5f6fa;
 }
 
 .category {
@@ -70,6 +75,7 @@ li {
   align-items: center;
   border: 2px solid #e8e8e8;
   padding: 15px;
+  background-color: #fff;
 }
 
 .complete-chapter {
@@ -149,6 +155,7 @@ li {
 
 .grey1-color {
   color: #9f9f9f;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .grey2-color {
@@ -168,13 +175,19 @@ li {
   border-top: 2px solid #ddd;
 }
 
+.form-title {
+  color: #888;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 input {
   width: 300px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 10px;
   outline: none;
-  background: none;
+  background: #fff;
   margin-left: 5px;
 }
 
@@ -184,12 +197,12 @@ select {
   border-radius: 4px;
   padding: 10px;
   outline: none;
-  background: none;
+  background: #fff;
   margin: 0 5px;
 }
 
 .add-btn {
-  width: 150px;
+  width: 200px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 10px;

@@ -26,7 +26,7 @@ function FormAddBook() {
 
   return (
     <div className="book-form">
-      <h2>ADD NEW BOOK</h2>
+      <h2 className="form-title">ADD NEW BOOK</h2>
       <form onSubmit={submitBookToStore}>
         <input onChange={(e) => setTitle(e.target.value)} type="text" className="title-field" name="name" placeholder="Book Title" id="title" value={title} required />
         <input onChange={(e) => setAuthor(e.target.value)} type="text" name="author" placeholder="Author" id="author" value={author} required />
