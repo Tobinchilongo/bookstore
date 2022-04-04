@@ -81,6 +81,10 @@ li {
   cursor: pointer;
 }
 
+.book-title {
+  font-family: 'RobotoSlab', sans-serif;
+}
+
 .book-layout:hover {
   transform: scale(1.01);
 }

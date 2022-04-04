@@ -18,7 +18,7 @@ function BookItem({ book }) {
     <li className="book-layout">
       <div className="book-item">
         <h3 className="grey-color">{book.category}</h3>
-        <h2>{book.title}</h2>
+        <h2 className="book-title">{book.title}</h2>
         <h5 className="blue-color">{book.author}</h5>
         <div className="alterBtn">
           <button className="action-btn" type="button">Comment</button>
