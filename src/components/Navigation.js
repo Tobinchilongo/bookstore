@@ -1,14 +1,16 @@
+import './App.css';
 import React from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navigation() {
   return (
     <header>
       <div className="container flex">
-        <h1>
-          <Link to="/" className="logo">Bookstore CMS</Link>
-        </h1>
-        <nav>
+        <nav className="nav-logo">
+          <h1>
+            <Link to="/" className="logo">Bookstore CMS</Link>
+          </h1>
           <ul className="flex">
             <li>
               <Link to="/" className="my-link">Books</Link>
@@ -18,6 +20,9 @@ function Navigation() {
             </li>
           </ul>
         </nav>
+        <div className="user-icon">
+          <p><FaUserAlt /></p>
+        </div>
       </div>
     </header>
   );
