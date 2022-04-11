@@ -8,6 +8,14 @@
 
 - ReactJS
 - Redux and react-redux
+- HTML
+- CSS
+
+
+![screenshot](./public/bookstore.png)
+
+## Live Demo 
+[Heroku](https://tobinsbookstore.herokuapp.com/)
 
 ## Installation
 
