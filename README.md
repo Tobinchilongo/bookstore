@@ -12,7 +12,7 @@
 - CSS
 
 
-![screenshot](../bookstore/public/bookstore.png)
+![screenshot](./public/bookstore.png)
 
 ## Live Demo 
 [Heroku](https://tobinsbookstore.herokuapp.com/)
