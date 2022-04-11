@@ -12,7 +12,7 @@
 - CSS
 
 
-![screenshot](C:\Users\tobin\Desktop\My-Projects\Module 3\bookstore\public\bookstore.png)
+![screenshot](../bookstore/public/bookstore.png)
 
 ## Live Demo 
 [Heroku](https://tobinsbookstore.herokuapp.com/)
